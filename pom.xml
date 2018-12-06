@@ -9,7 +9,7 @@
 
 	<groupId>org.omnifaces</groupId>
 	<artifactId>omnisettings</artifactId>
-	<version>0.1</version>
+	<version>0.1.1</version>
 
 	<name>OmniSettings</name>
 	<description>Very basic provider for injectable settings</description>
@@ -31,15 +31,25 @@
 
 	<repositories>
 		<repository>
+			<id>mercury1-repository</id>
+			<url>https://maven.mercury1.co.uk/nexus/content/repositories/releases</url>
+		</repository>
+<!-- 
+		<repository>
 			<id>ossrh-snapshots</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</repository>
+-->
 	</repositories>
 
 	<distributionManagement>
+		<repository>
+			<id>mercury1-repository</id>
+			<url>https://maven.mercury1.co.uk/nexus/content/repositories/releases</url>
+		</repository>
 		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>mercury1-repository-snapshots</id>
+			<url>https://maven.mercury1.co.uk/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -81,7 +91,7 @@
 		<dependency>
 			<groupId>org.omnifaces</groupId>
 			<artifactId>omniutils</artifactId>
-			<version>0.2-SNAPSHOT</version>
+			<version>0.3</version>
 		</dependency>
 	</dependencies>
 
